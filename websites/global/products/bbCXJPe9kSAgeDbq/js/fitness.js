@@ -34,12 +34,21 @@ this.Fitness = function(){
         });
 
         $(".button.daily", wellness).click( function(e) {
+            toggleButtons();
             startDailyAnimation();
         });
 
         $(".button.weekly", wellness).click( function(e) {
+            toggleButtons();
             startWeeklyAnimation();
         });
+
+    }
+
+    var toggleButtons = function(){
+
+        $(".button.daily").toggleClass("active");
+        $(".button.weekly").toggleClass("active");
 
     }
 
