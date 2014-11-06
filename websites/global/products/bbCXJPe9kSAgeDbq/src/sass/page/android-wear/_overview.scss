@@ -6,20 +6,32 @@ section.overview{
 
 	.bg{
 
-		margin-top:88px;
 		width:100%;
-		height:100%;		
+		height:100%;	
+		pointer-events:none;	
 
 		.wear{
 
 			display:block;
-			position: relative;
-			float:left;
+			position: absolute;
 			@include clearfix;
+
 			width:100%;
 			height:647px;
+			bottom:100px;
+			overflow:visible;
 
-			background: url("../img/android-wear/overview/background.jpg") no-repeat 30% 0;
+			.arm{
+				position: absolute;
+				bottom:-321px;
+				left:0;
+				width:1310px;
+				height:968px;
+				background: url("../img/android-wear/overview/arm2.png") no-repeat 0 0;
+			}
+
+			
+			pointer-events:none;
 
 			header{
 
@@ -41,11 +53,13 @@ section.overview{
 			.zenwatch-hitarea{
 				position: absolute;
 				top:160px;
-				left:30%;
+				left:570px;
 
 				width:500px;
 				height:500px;
+				pointer-events:visible;
 
+				@include user-select("none");
 				
 
 				&:hover{
@@ -64,7 +78,7 @@ section.overview{
 
 				position: relative;
 				margin-top:160px;
-				margin-left:30%;
+				margin-left:570px;
 				pointer-events:none;
 
 				&.loading{
@@ -78,12 +92,12 @@ section.overview{
 					position: absolute;
 					width:200px;
 					height:200px;
-					margin-left:-20px;
-					margin-top:10px;			
+					margin-left:-17px;
+					margin-top:46px;			
 
 					&.img{
 						overflow:hidden;
-						background:#000;
+						background:#1c1c19;
 					}
 
 					&.wireframe{
@@ -191,15 +205,15 @@ section.overview{
 				}
 
 				.background{
-					background:#000;		
+					background:#1c1c19;		
 				}
 
 				.watch-overlay{
 
 					display:block;
 					position: absolute;
-					top:-36px;
-					left:-62px;
+					top:2px;
+					left:-57px;
 
 					width:289px;
 					height:310px;			
@@ -212,31 +226,32 @@ section.overview{
 
 		.watch-instructions-overlay{
 
-			position: relative;
+			position: absolute;
+			top:0;
 			width:100%;
 			height:100%;
-			pointer-events:none;
+			pointer-events:none;		
+			opacity:0;
 
 			.background{
 				position: absolute;
 				width:100%;
 				height:100%;
 				background:#000;
-				opacity:0.75;	
-			}
-			
+				opacity:0.85;	
+			}			
 
 			.instructions{
 
 				position: absolute;
-				top:160px;
-				left:30%;
+				bottom:550px;
+				left:570px;
 
 				.instruction{
 
 					position: absolute;
 					top:-23px;
-					left:-115px;
+					left:-107px;
 					width:300px;
 					height:300px;
 					opacity:0;
@@ -248,6 +263,7 @@ section.overview{
 					&.step1{
 						.circle1, .circle2, .circle3, .circle4{
 							position: absolute;
+							left:-5px;
 						}
 					}
 
@@ -277,10 +293,22 @@ section.overview{
 						}						
 					}
 
+					&.step5{
+						.arrow{
+							position: absolute;
+							top:102px;
+							left:80px;
+						}		
+						p{
+							top:210px;
+						}				
+					}
+
 					p{
 						position: absolute;
 						padding:0 50px;
 						top:250px;
+						left:0;
 						width:200px;
 						line-height:25px;
 						text-align: center;
@@ -333,7 +361,7 @@ section.overview{
 					margin-right:10px;
 					vertical-align: top;
 
-					.button-step{
+					.button-step, .button-reset{
 
 						@include reset-box-model();
 						vertical-align: top;

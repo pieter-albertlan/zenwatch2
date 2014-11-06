@@ -63,15 +63,11 @@ this.Demo = function(){
         var rotationZ = -21;
         var transformPerspective = 800;
 
-        
-
-        TweenMax.set(zenfone_instructions_overlay, {rotationY:rotationY, rotationZ:rotationZ, rotationX:rotationX, transformPerspective:transformPerspective});        
+        TweenMax.set(zenfone_instructions_overlay, {rotationY:rotationY, rotationZ:-19, rotationX:rotationX, transformPerspective:transformPerspective});        
         TweenMax.set(wireframe_container, {rotationY:rotationY, rotationZ:rotationZ, rotationX:rotationX, transformPerspective:transformPerspective});
         TweenMax.set(img_container, {rotationY:rotationY, rotationZ:rotationZ, rotationX:rotationX, transformPerspective:transformPerspective});
         TweenMax.set(background, {rotationY:rotationY, rotationZ:rotationZ, rotationX:rotationX, transformPerspective:transformPerspective});
-        TweenMax.set(zenfone_hitarea, {x:-170, y:-150, rotationY:rotationY, rotationZ:rotationZ, rotationX:rotationX, transformPerspective:transformPerspective});
-        
-
+        TweenMax.set(zenfone_hitarea, {x:-170, y:-150, rotationY:rotationY, rotationZ:rotationZ, rotationX:rotationX, transformPerspective:transformPerspective});    
 
         TweenMax.set(wireframe_container, {alpha:0});
 
@@ -80,7 +76,6 @@ this.Demo = function(){
     var setupEventListeners = function(){        
 
         hammertime = new Hammer(zenfone_hitarea[0]);
-        console.log(zenfone_hitarea);
         hammertime.get('swipe', 'pan').set({ direction: Hammer.DIRECTION_ALL }); 
 
         hammertime.on('tap', function(e) {  
@@ -242,7 +237,7 @@ this.Demo = function(){
         } else if (step == 5){
             step6();        
         } else if (step == 7){
-            step8();
+            step8_2();
         } else if (step == 6){
             step8();
         } else if (step == 9){
@@ -465,7 +460,10 @@ this.Demo = function(){
     var step4 = function(){  
 
         forceX = 0;
-        forceY = -2;        
+        forceY = -2;    
+
+
+        _window.trigger( "demo_step3" ); 
 
     }
 
@@ -479,9 +477,6 @@ this.Demo = function(){
 
         forceX = 1;
         forceY = -2;
-
-        //var clock = $(".wear .slide.clock");
-        //clock.addClass("vertical");        
 
         unpanlock();
 
@@ -522,9 +517,21 @@ this.Demo = function(){
 
         step++;
         unpanlock();
-
+        _window.trigger( "demo_step3" );      
 
     }
+
+    var step8_2 = function(){
+
+        forceX = 2;
+        forceY = -3;
+
+        setSlides("swipeup");
+        step++;
+        unpanlock();
+    }
+
+
 
     var step9 = function(){
 
@@ -627,7 +634,7 @@ this.Demo = function(){
     preload();   
 
     _window.resize(function() {         
-        resize();        
+        //resize();        
     });
 
     this.step1 = step1;

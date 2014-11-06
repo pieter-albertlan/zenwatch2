@@ -46,7 +46,7 @@
 #videoplayer .close:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#00FFFFFF, endColorstr=#00FFFFFF );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF );
 }
 
 /* line 3, ../src/sass/config/_asus.scss */
@@ -218,23 +218,22 @@ h1.page-title {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  text-transform: capitalize;
-  background-image: url('../img/common/signpost-left.png?1408345030');
+  background-image: url('../img/common/signpost-left.png?1415253302');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
+  -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
-  -webkit-transition-property: opacity;
   transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
   -moz-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
   background-position: 0px 0px;
 }
@@ -250,18 +249,18 @@ h1.page-title {
 #special-sectionOverview .signpost .prev:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#00FFFFFF, endColorstr=#00FFFFFF );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF );
+  -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
-  -webkit-transition-property: opacity;
   transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
   -moz-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
 /* line 37, ../src/sass/nav/_signpost.scss */
@@ -270,23 +269,22 @@ h1.page-title {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  text-transform: capitalize;
-  background-image: url('../img/common/signpost-right.png?1408345030');
+  background-image: url('../img/common/signpost-right.png?1415253302');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
+  -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
-  -webkit-transition-property: opacity;
   transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
   -moz-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
   background-position: 0px 0px;
 }
@@ -302,18 +300,18 @@ h1.page-title {
 #special-sectionOverview .signpost .next:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#00FFFFFF, endColorstr=#00FFFFFF );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF );
+  -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
-  -webkit-transition-property: opacity;
   transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
   -moz-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
 @media only screen and (max-width: 719px) {
@@ -326,7 +324,7 @@ h1.page-title {
 #special-sectionOverview.lt-ie9 .signpost .prev, #special-sectionOverview.lt-ie9 .signpost .next {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#00FFFFFF, endColorstr=#00FFFFFF );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF );
 }
 
 /* line 2, ../src/sass/nav/_section-pagination.scss */
@@ -391,20 +389,22 @@ h1.page-title {
   background-image: none;
   background-color: #C8C8C8;
   border: 1px solid #aaa;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
+  -webkit-transition-property: width;
   -moz-transition-property: width;
   -o-transition-property: width;
-  -webkit-transition-property: width;
   transition-property: width;
+  -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
   -moz-transition-timing-function: ease-out;
   -o-transition-timing-function: ease-out;
-  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 /* line 61, ../src/sass/nav/_section-pagination.scss */
@@ -454,7 +454,7 @@ body {
   font-size: 12px;
   font-family: "Segoe UI Semilight", "Open Sans", Arial, sans-serif, Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", "STHeiti Light", STXihei, STHeiti, "Apple LiGothic Medium", \5FAE\8EDF\6B63\9ED1\9AD4, "Microsoft JhengHei";
 }
-/* line 5, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 17, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 #special-sectionOverview html, #special-sectionOverview body, #special-sectionOverview div, #special-sectionOverview span, #special-sectionOverview applet, #special-sectionOverview object, #special-sectionOverview iframe,
 #special-sectionOverview h1, #special-sectionOverview h2, #special-sectionOverview h3, #special-sectionOverview h4, #special-sectionOverview h5, #special-sectionOverview h6, #special-sectionOverview p, #special-sectionOverview blockquote, #special-sectionOverview pre,
 #special-sectionOverview a, #special-sectionOverview abbr, #special-sectionOverview acronym, #special-sectionOverview address, #special-sectionOverview big, #special-sectionOverview cite, #special-sectionOverview code,
@@ -475,40 +475,40 @@ body {
   font-size: 100%;
   vertical-align: baseline;
 }
-/* line 22, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 #special-sectionOverview html {
   line-height: 1;
 }
-/* line 24, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 #special-sectionOverview ol, #special-sectionOverview ul {
   list-style: none;
 }
-/* line 26, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 #special-sectionOverview table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* line 28, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 #special-sectionOverview caption, #special-sectionOverview th, #special-sectionOverview td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
-/* line 30, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 #special-sectionOverview q, #special-sectionOverview blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 #special-sectionOverview q:before, #special-sectionOverview q:after, #special-sectionOverview blockquote:before, #special-sectionOverview blockquote:after {
   content: "";
   content: none;
 }
-/* line 32, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 #special-sectionOverview a img {
   border: none;
 }
-/* line 116, C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-#special-sectionOverview article, #special-sectionOverview aside, #special-sectionOverview details, #special-sectionOverview figcaption, #special-sectionOverview figure, #special-sectionOverview footer, #special-sectionOverview header, #special-sectionOverview hgroup, #special-sectionOverview main, #special-sectionOverview menu, #special-sectionOverview nav, #special-sectionOverview section, #special-sectionOverview summary {
+/* line 116, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+#special-sectionOverview article, #special-sectionOverview aside, #special-sectionOverview details, #special-sectionOverview figcaption, #special-sectionOverview figure, #special-sectionOverview footer, #special-sectionOverview header, #special-sectionOverview hgroup, #special-sectionOverview menu, #special-sectionOverview nav, #special-sectionOverview section, #special-sectionOverview summary {
   display: block;
 }
 /* line 16, ../src/sass/page/_main.scss */
@@ -564,13 +564,13 @@ body {
 }
 /* line 61, ../src/sass/page/_main.scss */
 #special-sectionOverview section .swipe-wrap.animate {
+  -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
-  -webkit-transition-property: all;
   transition-property: all;
+  -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
 /* line 68, ../src/sass/page/_main.scss */
@@ -880,8 +880,7 @@ html.lt-ie9 #special-sectionOverview .page {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  text-transform: capitalize;
-  background-image: url('../img/common/play.png?1408345030');
+  background-image: url('../img/common/play.png?1415253302');
   background-repeat: no-repeat;
   background-position: 0 0;
   width: 6px;
@@ -932,6 +931,7 @@ html.lt-ie9 #special-sectionOverview .page {
 
 /* line 7, ../src/sass/page/index/_smart.scss */
 #overview #special-sectionOverview .smart .page.overview .group {
+  display: inline;
   float: right;
   margin-top: 148px;
   width: 33.54167%;
@@ -951,6 +951,7 @@ html.lt-ie9 #special-sectionOverview .page {
 @media only screen and (min-width: 719px) and (max-width: 959px) {
   /* line 7, ../src/sass/page/index/_smart.scss */
   #overview #special-sectionOverview .smart .page.overview .group {
+    display: inline;
     float: left;
     margin-top: 50px;
     width: 90%;
@@ -962,6 +963,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 31, ../src/sass/page/index/_smart.scss */
 #overview #special-sectionOverview .smart .page.overview figure {
+  display: inline;
   float: left;
   width: 50%;
 }
@@ -991,6 +993,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 8, ../src/sass/page/index/_wear.scss */
 #overview #special-sectionOverview .wear .page.overview .group {
+  display: inline;
   float: right;
   margin-top: 248px;
   width: 240px;
@@ -1014,6 +1017,7 @@ html.lt-ie9 #special-sectionOverview .page {
 @media only screen and (min-width: 719px) and (max-width: 959px) {
   /* line 8, ../src/sass/page/index/_wear.scss */
   #overview #special-sectionOverview .wear .page.overview .group {
+    display: inline;
     float: left;
     margin-top: 50px;
     width: 90%;
@@ -1021,6 +1025,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 34, ../src/sass/page/index/_wear.scss */
 #overview #special-sectionOverview .wear .page.overview figure {
+  display: inline;
   float: left;
   width: 50%;
 }
@@ -1058,6 +1063,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 13, ../src/sass/page/index/_wellness.scss */
 #overview #special-sectionOverview .wellness .page.overview .group {
+  display: inline;
   float: left;
   margin-top: 208px;
   width: 322px;
@@ -1073,6 +1079,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 28, ../src/sass/page/index/_wellness.scss */
 #overview #special-sectionOverview .wellness .page.overview figure {
+  display: inline;
   float: left;
   height: 100%;
 }
@@ -1092,6 +1099,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 13, ../src/sass/page/index/_design.scss */
 #overview #special-sectionOverview .design .page.overview .group {
+  display: inline;
   float: left;
   position: absolute;
   width: 322px;
@@ -1127,6 +1135,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 42, ../src/sass/page/index/_design.scss */
 #overview #special-sectionOverview .design .page.overview figure {
+  display: inline;
   float: right;
   height: 100%;
   width: 102.08333%;
@@ -1148,6 +1157,7 @@ html.lt-ie9 #special-sectionOverview .page {
   #overview #special-sectionOverview .design .page.overview figure {
     width: 80%;
     height: auto;
+    display: inline;
     float: right;
   }
   /* line 64, ../src/sass/page/index/_design.scss */
@@ -1161,6 +1171,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 5, ../src/sass/page/index/_overview.scss */
 #overview #special-sectionOverview .overview .page.overview .group {
+  display: inline;
   float: right;
   margin-top: 20%;
   margin-right: -40px;
@@ -1188,6 +1199,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 31, ../src/sass/page/index/_overview.scss */
 #overview #special-sectionOverview .overview .page.overview figure {
+  display: inline;
   float: left;
   width: 33.33333%;
 }
@@ -1242,6 +1254,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 53, ../src/sass/page/index/_ocean.scss */
 #overview #special-sectionOverview .ocean .page.overview figure {
+  display: inline;
   float: left;
   display: block;
   margin-left: 0;
@@ -1264,6 +1277,7 @@ html.lt-ie9 #special-sectionOverview .page {
 /* line 4, ../src/sass/page/design/_overview.scss */
 #design #special-sectionOverview .page.overview .group {
   position: relative;
+  display: inline;
   float: right;
   margin-top: 198px;
   width: 50%;
@@ -1294,6 +1308,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 36, ../src/sass/page/design/_overview.scss */
 #design #special-sectionOverview .page.overview .bg figure {
+  display: inline;
   float: left;
   height: 100%;
   width: 50%;
@@ -1353,6 +1368,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 27, ../src/sass/page/design/_clasp.scss */
 #design #special-sectionOverview .page.clasp .group-clasp .group {
+  display: inline;
   float: right;
   width: 320px;
 }
@@ -1371,6 +1387,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 4, ../src/sass/page/design/_belt.scss */
 #design #special-sectionOverview .page.belt .group {
+  display: inline;
   float: left;
   margin-top: 198px;
   width: 400px;
@@ -1400,6 +1417,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 10, ../src/sass/page/design/_face.scss */
 #design #special-sectionOverview .page.face .group {
+  display: inline;
   float: right;
   width: 360px;
 }
@@ -1439,6 +1457,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 61, ../src/sass/page/design/_face.scss */
 #design #special-sectionOverview .page.face figure {
+  display: inline;
   float: left;
   width: 730px;
 }
@@ -1459,6 +1478,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 4, ../src/sass/page/design/_curved-glass.scss */
 #design #special-sectionOverview .page.curved-glass .group {
+  display: inline;
   float: left;
   margin-top: 303px;
   width: 372px;
@@ -1520,6 +1540,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 7, ../src/sass/page/design/_sequence.scss */
 #design #special-sectionOverview .page.sequence .center .group {
+  display: inline;
   float: left;
   margin-top: 200px;
   width: 250px;
@@ -1607,6 +1628,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 4, ../src/sass/page/design/_stunning-display.scss */
 #design #special-sectionOverview .page.stunning-display .group {
+  display: inline;
   float: left;
   width: 310px;
 }
@@ -1630,6 +1652,7 @@ html.lt-ie9 #special-sectionOverview .page {
 /* line 5, ../src/sass/page/smart/_overview.scss */
 #smart #special-sectionOverview .page.overview .group {
   position: relative;
+  display: inline;
   float: right;
   width: 450px;
 }
@@ -1720,8 +1743,8 @@ html.lt-ie9 #special-sectionOverview .page {
   margin: 0;
   padding: 0;
   border: 0;
-  border-radius: 4px / 4px;
-  border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
   border-radius: 4px / 4px;
   margin: 40px auto 0;
   border: 1px solid #333;
@@ -1729,6 +1752,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 16, ../src/sass/page/smart/_zen-ui.scss */
 #smart #special-sectionOverview .page.zen-ui .menu-page li {
+  display: inline;
   float: left;
   text-align: center;
 }
@@ -1741,17 +1765,17 @@ html.lt-ie9 #special-sectionOverview .page {
   font-size: 1.2em;
   line-height: 35px;
   text-decoration: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
   transition-property: all;
-  transition-property: all;
-  transition-property: all;
-  transition-property: all;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
   transition-duration: 0.6s;
-  transition-duration: 0.6s;
-  transition-duration: 0.6s;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
-  transition-timing-function: ease;
-  transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
   transition-timing-function: ease;
 }
 /* line 31, ../src/sass/page/smart/_zen-ui.scss */
@@ -1766,6 +1790,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 42, ../src/sass/page/smart/_zen-ui.scss */
 #smart #special-sectionOverview .page.zen-ui .group {
+  display: inline;
   float: left;
   width: 300px;
   text-align: center;
@@ -1789,6 +1814,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 65, ../src/sass/page/smart/_zen-ui.scss */
 #smart #special-sectionOverview .page.zen-ui figure {
+  display: inline;
   float: left;
   width: 319px;
   margin: 0 20px;
@@ -1826,8 +1852,8 @@ html.lt-ie9 #special-sectionOverview .page {
   margin: 0;
   padding: 0;
   border: 0;
-  border-radius: 4px / 4px;
-  border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
   border-radius: 4px / 4px;
   margin: 40px auto 0;
   border: 1px solid #7fb53e;
@@ -1835,6 +1861,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 17, ../src/sass/page/smart/_android-apps.scss */
 #smart #special-sectionOverview .page.android-apps .menu-page li {
+  display: inline;
   float: left;
   text-align: center;
 }
@@ -1847,17 +1874,17 @@ html.lt-ie9 #special-sectionOverview .page {
   font-size: 1.2em;
   line-height: 35px;
   text-decoration: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
   transition-property: all;
-  transition-property: all;
-  transition-property: all;
-  transition-property: all;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
   transition-duration: 0.6s;
-  transition-duration: 0.6s;
-  transition-duration: 0.6s;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
-  transition-timing-function: ease;
-  transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
   transition-timing-function: ease;
 }
 /* line 32, ../src/sass/page/smart/_android-apps.scss */
@@ -1872,6 +1899,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 43, ../src/sass/page/smart/_android-apps.scss */
 #smart #special-sectionOverview .page.android-apps .group {
+  display: inline;
   float: left;
   display: inline-block;
   margin-top: 142px;
@@ -1901,6 +1929,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 73, ../src/sass/page/smart/_android-apps.scss */
 #smart #special-sectionOverview .page.android-apps figure {
+  display: inline;
   float: right;
   width: 580px;
   			/*
@@ -1930,6 +1959,7 @@ html.lt-ie9 #special-sectionOverview .page {
 /* line 5, ../src/sass/page/smart/_cover-to-mute.scss */
 #smart #special-sectionOverview .page.cover-to-mute .group {
   position: relative;
+  display: inline;
   float: left;
   width: 400px;
   text-align: center;
@@ -1946,6 +1976,7 @@ html.lt-ie9 #special-sectionOverview .page {
 /* line 12, ../src/sass/page/smart/_remote-camera.scss */
 #smart #special-sectionOverview .page.remote-camera .group {
   position: relative;
+  display: inline;
   float: left;
   width: 400px;
   text-align: center;
@@ -1962,6 +1993,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 4, ../src/sass/page/smart/_presentation-control.scss */
 #smart #special-sectionOverview .page.presentation-control .group {
+  display: inline;
   float: left;
   width: 450px;
   text-align: center;
@@ -1972,6 +2004,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 4, ../src/sass/page/smart/_find-my-phone.scss */
 #smart #special-sectionOverview .page.find-my-phone .group {
+  display: inline;
   float: left;
   width: 450px;
   text-align: left;
@@ -2093,29 +2126,39 @@ html.lt-ie9 #special-sectionOverview .page {
 
 /* line 7, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg {
-  margin-top: 88px;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 /* line 13, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear {
   display: block;
-  position: relative;
-  float: left;
+  position: absolute;
   overflow: hidden;
   *zoom: 1;
   width: 100%;
   height: 647px;
-  background: url("../img/android-wear/overview/background.jpg") no-repeat 30% 0;
+  bottom: 100px;
+  overflow: visible;
+  pointer-events: none;
 }
 /* line 24, ../src/sass/page/android-wear/_overview.scss */
+#android-wear #special-sectionOverview section.overview .bg .wear .arm {
+  position: absolute;
+  bottom: -321px;
+  left: 0;
+  width: 1310px;
+  height: 968px;
+  background: url("../img/android-wear/overview/arm2.png") no-repeat 0 0;
+}
+/* line 36, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear header {
   display: block;
   height: 86px;
   width: 100%;
   background: #000;
 }
-/* line 33, ../src/sass/page/android-wear/_overview.scss */
+/* line 45, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear button {
   border: 0;
   padding: 0;
@@ -2123,52 +2166,56 @@ html.lt-ie9 #special-sectionOverview .page {
   background: none;
   cursor: pointer;
 }
-/* line 41, ../src/sass/page/android-wear/_overview.scss */
+/* line 53, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch-hitarea {
   position: absolute;
   top: 160px;
-  left: 30%;
+  left: 570px;
   width: 500px;
   height: 500px;
+  pointer-events: visible;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
-/* line 51, ../src/sass/page/android-wear/_overview.scss */
+/* line 65, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch-hitarea:hover {
   cursor: url("../img/android-wear/cursor-open.png"), auto;
 }
-/* line 55, ../src/sass/page/android-wear/_overview.scss */
+/* line 69, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch-hitarea:active {
   cursor: url("../img/android-wear/cursor-close.png"), auto;
 }
-/* line 63, ../src/sass/page/android-wear/_overview.scss */
+/* line 77, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch {
   position: relative;
   margin-top: 160px;
-  margin-left: 30%;
+  margin-left: 570px;
   pointer-events: none;
 }
-/* line 71, ../src/sass/page/android-wear/_overview.scss */
+/* line 85, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch.loading .slides, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch.loading .background {
   display: none;
 }
-/* line 76, ../src/sass/page/android-wear/_overview.scss */
+/* line 90, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background {
   position: absolute;
   width: 200px;
   height: 200px;
-  margin-left: -20px;
-  margin-top: 10px;
+  margin-left: -17px;
+  margin-top: 46px;
 }
-/* line 84, ../src/sass/page/android-wear/_overview.scss */
+/* line 98, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides.img, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background.img {
   overflow: hidden;
-  background: #000;
+  background: #1c1c19;
 }
-/* line 91, ../src/sass/page/android-wear/_overview.scss */
+/* line 105, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides.wireframe .slide.call .button-container, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background.wireframe .slide.call .button-container {
   left: 12px;
   width: 176px;
 }
-/* line 98, ../src/sass/page/android-wear/_overview.scss */
+/* line 112, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide {
   left: 0;
   width: 200px;
@@ -2176,21 +2223,20 @@ html.lt-ie9 #special-sectionOverview .page {
   font-size: 1.3em;
   text-align: center;
   color: #fff;
-  user-select: none;
-  user-select: none;
-  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   position: absolute;
 }
-/* line 108, ../src/sass/page/android-wear/_overview.scss */
+/* line 122, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide span, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide span {
   opacity: 0.5;
 }
-/* line 112, ../src/sass/page/android-wear/_overview.scss */
+/* line 126, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.call, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.call {
   top: 300px;
 }
-/* line 116, ../src/sass/page/android-wear/_overview.scss */
+/* line 130, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.call .button-container, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.call .button-container {
   position: absolute;
   top: 0;
@@ -2199,156 +2245,170 @@ html.lt-ie9 #special-sectionOverview .page {
   height: 200px;
   overflow: hidden;
 }
-/* line 125, ../src/sass/page/android-wear/_overview.scss */
+/* line 139, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.call .button-container .button-green, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.call .button-container .button-red, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.call .button-container .button-green, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.call .button-container .button-red {
   position: absolute;
 }
-/* line 129, ../src/sass/page/android-wear/_overview.scss */
+/* line 143, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.call .button-container .button-green, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.call .button-container .button-green {
   top: 50px;
   right: -29px;
 }
-/* line 134, ../src/sass/page/android-wear/_overview.scss */
+/* line 148, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.call .button-container .button-red, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.call .button-container .button-red {
   top: 50px;
   left: -29px;
 }
-/* line 143, ../src/sass/page/android-wear/_overview.scss */
+/* line 157, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.weather, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.weather {
   top: 0px;
 }
-/* line 147, ../src/sass/page/android-wear/_overview.scss */
+/* line 161, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.call-later, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.call-later {
   top: 0;
   left: 250px;
 }
-/* line 152, ../src/sass/page/android-wear/_overview.scss */
+/* line 166, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.clock, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.clock {
   top: 0;
   left: -250px;
 }
-/* line 156, ../src/sass/page/android-wear/_overview.scss */
+/* line 170, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.clock .base, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.clock .minutes, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.clock .seconds, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.clock .cover, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.clock .base, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.clock .minutes, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.clock .seconds, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.clock .cover {
   position: absolute;
 }
-/* line 160, ../src/sass/page/android-wear/_overview.scss */
+/* line 174, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.clock .cover, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.clock .cover {
   top: 38px;
   left: 62px;
 }
-/* line 165, ../src/sass/page/android-wear/_overview.scss */
+/* line 179, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.clock .base, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.clock .base {
   top: 61px;
   left: 62px;
 }
-/* line 170, ../src/sass/page/android-wear/_overview.scss */
+/* line 184, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.clock .minutes, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.clock .minutes {
   top: 58px;
   left: 100px;
 }
-/* line 175, ../src/sass/page/android-wear/_overview.scss */
+/* line 189, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.clock .seconds, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.clock .seconds {
   top: 102px;
   left: 103px;
 }
-/* line 182, ../src/sass/page/android-wear/_overview.scss */
+/* line 196, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.maps, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.maps {
   top: 600px;
 }
-/* line 186, ../src/sass/page/android-wear/_overview.scss */
+/* line 200, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .slides .slide.tasks, #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background .slide.tasks {
   top: 900px;
 }
-/* line 193, ../src/sass/page/android-wear/_overview.scss */
+/* line 207, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .background {
-  background: #000;
+  background: #1c1c19;
 }
-/* line 197, ../src/sass/page/android-wear/_overview.scss */
+/* line 211, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .wear .zenwatch .watch-overlay {
   display: block;
   position: absolute;
-  top: -36px;
-  left: -62px;
+  top: 2px;
+  left: -57px;
   width: 289px;
   height: 310px;
   background: url("../img/android-wear/overview/watch-overlay.png") no-repeat 0 0;
 }
-/* line 213, ../src/sass/page/android-wear/_overview.scss */
+/* line 227, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay {
-  position: relative;
+  position: absolute;
+  top: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
+  opacity: 0;
 }
-/* line 220, ../src/sass/page/android-wear/_overview.scss */
+/* line 236, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .background {
   position: absolute;
   width: 100%;
   height: 100%;
   background: #000;
-  opacity: 0.75;
+  opacity: 0.85;
 }
-/* line 229, ../src/sass/page/android-wear/_overview.scss */
+/* line 244, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions {
   position: absolute;
-  top: 160px;
-  left: 30%;
+  bottom: 550px;
+  left: 570px;
 }
-/* line 235, ../src/sass/page/android-wear/_overview.scss */
+/* line 250, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction {
   position: absolute;
   top: -23px;
-  left: -115px;
+  left: -107px;
   width: 300px;
   height: 300px;
   opacity: 0;
 }
-/* line 244, ../src/sass/page/android-wear/_overview.scss */
+/* line 259, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.active {
   opacity: 1;
 }
-/* line 249, ../src/sass/page/android-wear/_overview.scss */
+/* line 264, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step1 .circle1, #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step1 .circle2, #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step1 .circle3, #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step1 .circle4 {
   position: absolute;
+  left: -5px;
 }
-/* line 255, ../src/sass/page/android-wear/_overview.scss */
+/* line 271, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step2 .arrow1, #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step2 .arrow2, #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step2 .arrow3 {
   margin-left: 110px;
 }
-/* line 259, ../src/sass/page/android-wear/_overview.scss */
+/* line 275, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step2 .arrow1 {
   margin-top: 40px;
 }
-/* line 265, ../src/sass/page/android-wear/_overview.scss */
+/* line 281, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step3 .arrow1, #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step3 .arrow2, #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step3 .arrow3, #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step4 .arrow1, #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step4 .arrow2, #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step4 .arrow3 {
   display: inline-block;
   margin-right: -10px;
 }
-/* line 269, ../src/sass/page/android-wear/_overview.scss */
+/* line 285, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step3 .arrow1, #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step4 .arrow1 {
   margin: 116px -10px 0 55px;
 }
-/* line 275, ../src/sass/page/android-wear/_overview.scss */
+/* line 291, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step4 .arrow1 {
   margin-left: 60px;
 }
-/* line 280, ../src/sass/page/android-wear/_overview.scss */
+/* line 297, ../src/sass/page/android-wear/_overview.scss */
+#android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step5 .arrow {
+  position: absolute;
+  top: 102px;
+  left: 80px;
+}
+/* line 302, ../src/sass/page/android-wear/_overview.scss */
+#android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction.step5 p {
+  top: 210px;
+}
+/* line 307, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .bg .watch-instructions-overlay .instructions .instruction p {
   position: absolute;
   padding: 0 50px;
   top: 250px;
+  left: 0;
   width: 200px;
   line-height: 25px;
   text-align: center;
   font-size: 1.5em;
 }
-/* line 296, ../src/sass/page/android-wear/_overview.scss */
+/* line 324, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .center {
   position: relative;
   margin: 0 auto;
   pointer-events: none;
 }
-/* line 302, ../src/sass/page/android-wear/_overview.scss */
+/* line 330, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .center .group {
   position: absolute;
   margin-top: 200px;
@@ -2356,34 +2416,34 @@ html.lt-ie9 #special-sectionOverview .page {
   width: 361px;
   color: #fff;
 }
-/* line 310, ../src/sass/page/android-wear/_overview.scss */
+/* line 338, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .center .group .android-wear {
   margin-bottom: 12px;
 }
-/* line 314, ../src/sass/page/android-wear/_overview.scss */
+/* line 342, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .center .group h1, #android-wear #special-sectionOverview section.overview .center .group p {
   margin-bottom: 25px;
 }
-/* line 318, ../src/sass/page/android-wear/_overview.scss */
+/* line 346, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .center .group p {
   line-height: 20px;
 }
-/* line 322, ../src/sass/page/android-wear/_overview.scss */
+/* line 350, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .center .group h1 {
   text-align: left;
 }
-/* line 326, ../src/sass/page/android-wear/_overview.scss */
+/* line 354, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .center .group .instructions {
   position: relative;
 }
-/* line 330, ../src/sass/page/android-wear/_overview.scss */
+/* line 358, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .center .group .instructions li {
   display: inline-block;
   margin-right: 10px;
   vertical-align: top;
 }
-/* line 336, ../src/sass/page/android-wear/_overview.scss */
-#android-wear #special-sectionOverview section.overview .center .group .instructions li .button-step {
+/* line 364, ../src/sass/page/android-wear/_overview.scss */
+#android-wear #special-sectionOverview section.overview .center .group .instructions li .button-step, #android-wear #special-sectionOverview section.overview .center .group .instructions li .button-reset {
   margin: 0;
   padding: 0;
   border: 0;
@@ -2398,40 +2458,40 @@ html.lt-ie9 #special-sectionOverview .page {
   pointer-events: none;
   cursor: pointer;
 }
-/* line 350, ../src/sass/page/android-wear/_overview.scss */
-#android-wear #special-sectionOverview section.overview .center .group .instructions li .button-step.active {
+/* line 378, ../src/sass/page/android-wear/_overview.scss */
+#android-wear #special-sectionOverview section.overview .center .group .instructions li .button-step.active, #android-wear #special-sectionOverview section.overview .center .group .instructions li .button-reset.active {
   color: #fff;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAABG0lEQVRYw82Yyw2CQBBA8aLhYhmUIHYh1gEePZJgGdCH3OCgXSCQ2IHYAM6amUg2Kst35/BCQnZnXmB/s4Z1rI0ObIAAiIECeAA1Pgt8H2A75bgqjUzABTJMqMoN8LD/IIkdcO+YXEb0d/pIrIBwYHKZEOMqSayBdGQBIsX4fyWWQDKRAJFgnp8S4cQCzV/zVcKZSYBwZAlzhFnQZ9aYTQl3ZgHCa0pkmiQykrA1CRC2kPA1S/hC4qxZIhYSpWaJUkhUmiWehmaBN2y+BIsxwWJ2sFgnWKyYLPYONrsoi/MEi5MVEc0kELWdti8TC1zl+oNl3cGmApMH6xi16H6MqvwA5B2T59hvcFXedj9Bx4DK+txPnIAtsFCN+wImGyOUjMCeQAAAAABJRU5ErkJggg==);
   pointer-events: auto;
 }
-/* line 356, ../src/sass/page/android-wear/_overview.scss */
-#android-wear #special-sectionOverview section.overview .center .group .instructions li .button-step.disabled {
+/* line 384, ../src/sass/page/android-wear/_overview.scss */
+#android-wear #special-sectionOverview section.overview .center .group .instructions li .button-step.disabled, #android-wear #special-sectionOverview section.overview .center .group .instructions li .button-reset.disabled {
   opacity: 0.5;
 }
-/* line 360, ../src/sass/page/android-wear/_overview.scss */
-#android-wear #special-sectionOverview section.overview .center .group .instructions li .button-step.button-reset {
+/* line 388, ../src/sass/page/android-wear/_overview.scss */
+#android-wear #special-sectionOverview section.overview .center .group .instructions li .button-step.button-reset, #android-wear #special-sectionOverview section.overview .center .group .instructions li .button-reset.button-reset {
   color: #fff;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAC20lEQVRYw7VYS0iVQRT+a2HdFlcXQQvBEivSRdHCDIIWLW+LrgvNZYt22sabIJJghYvQcK3t0mgXCeYiKugB5iKIFArzSkEE9lQhIgz+zsQ3cDidmX/mXlt83DuPc+bjnDmP+ZODfWkSgWOEIcIsoUxYI6T4LWN+CPuCdKZpmoRszBG6CUs4MBRvCT2Qr4rEGcJ7pniecJ1QIDQR6rCvDuMC1ueZjJEvVkJiB2GcKbpP6Ip03VnIWR3j0BtEIk94BMHfhIuRh0uUoCeF3nwWiRrCQwi8JrRUScCiBfpS6K/xkbAueENoiDhkkPCOcANu0PY0QK91jUqiyFwQa4FrIjJeEjocFrGuKUoSORYFpQrMPeYI02HHHbFRk+MkulkUVOJzkw++OIj0K/tt1PRwEjYRaWFoLtGJACK7COcIiwqR40r4mvklS6KNJSJN+SWsH4mwzC1BoqzssQmtzd5sMxhVNu4hbHoU+TAniJwS66OYHzSDexicVhS9EIrGIkjsE7KTYr2A+VkzWMGgUWzqc1y01ggij0VB42uNmF8xg3UMatmG/Z7quBpBYpjJfVPKg5nfSNgmnjO+Z5TpmUASA0zmh7L+d02zhE0mn1l2s/hK+IT/JwNIXGGyaz5LyDtRD2vsJPQKEu3IG4bw7gAS06KvcN4JX3QcECQmIu5DXljyri86fHmCWyo2Om4LuQ5fnsjKmOeFMnNpmzMIXBUy5n5t92XMrNqRiD7T4BfhAm9OgMPMvT4r/FM7QqroIcJPRflHwjPCA/QQWjjfDK2iIf3EUQcRH+7E9BO8s9r0+LzJYe5UcdeAIt/MCmLR1WNOYMNCRo9pFEyheTXpeIPwgfAch+919JivZKi7uu0n/7nbfsrfH6HvjlKVBHpj3x2+F1hn5OGd1bzApO99b1Fb9GrZW3QEd4PXjPateJWbxLQcGZ7LkMttxacB3/cJ2wass+8Tl9Fdbwv9PvEHlZRfhAvqulwAAAAASUVORK5CYII=);
 }
-/* line 364, ../src/sass/page/android-wear/_overview.scss */
-#android-wear #special-sectionOverview section.overview .center .group .instructions li .button-step.button-reset.active {
+/* line 392, ../src/sass/page/android-wear/_overview.scss */
+#android-wear #special-sectionOverview section.overview .center .group .instructions li .button-step.button-reset.active, #android-wear #special-sectionOverview section.overview .center .group .instructions li .button-reset.button-reset.active {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAACvUlEQVRYw81YXWsTQRRdX5S8+DNEEBUUjAiCggV9UCOCCII/wFTxRamVhVSlxg9KUUpJfanoS/XBamv8alqpICrEClYLaVONWqnStEmNtdTKcYbZZXc2Ox/JptALh4Tde+6cnbkzc2eMNadgVIAtBDGCJEGWoEAA6zdrPY9ZfloxARg6jiGCKEHGalAXowT1Fj+QiP0EuQob94LyI9WIWEWQCNi4FwkrrpaI1QT9NRZgo9+KLxWxkiC1RAJspKx2hCKqGoLWJ8DENHDnNXDytvbQ+IqIVPt1NwbA2ch34MQtJS/iFREKMgs6B+Fr7SnlrAm5RUSDjPO5e8DMb38hV5NSbr1bhHAhWtcAHG5TC9nYCDR0AZnJciGHrgt5GVtEWJp0j1mgfS36PfPgLS/iS17qH6YiTJHDtiZg8Z9WoDIM5XghRxNCX5OKeCgKNPyND0QTUFfEzmaeez8t9E1SEeN+Ly/3+ifawWv6Qt5kHd7nKaHfOBVR9L6oi0NoU7/0RdApaltxTug3a3gfbmhkBJkNfNQT0fLI4cwtiP3KeiLew0jTJScpbSuQtSBfYv+PtKtFtD1zuLN/5D3B5cT2C6w31p8BLvbwIqI32bqx2QTCMbWI1AeHOzEjzwnh7Ki7xIvoeqWfD5tMvif7huWzw5QF+5qvbnb0DvE8yYZmKlfMs3f5YDRp91xR5EIfz6H5tfa0fMU0VEUsHU+3LSwC57tZfrj99pKl/flI+WyS9EJGexfdTb58/m958J9FIP0JeDnKagg/607r76LKeiLS6i9EZk/fV1ZPaFVWu+L+3e01Olx0oaq0srLRoZP5xzrZdp39wRK1NA9MFoB3Odb4jmZljA5VtT24xNX2C/f5Y9meO5bNCcybrLU4ix6oxan8OMFYhY2PWbzAp3LV/YRdBhRd9xNNBFsJVujeT/wHJGo4TpMS+TEAAAAASUVORK5CYII=);
 }
-/* line 372, ../src/sass/page/android-wear/_overview.scss */
+/* line 400, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .center .group .instructions li .instruction {
   position: absolute;
   left: 0;
   top: 50px;
   display: none;
 }
-/* line 378, ../src/sass/page/android-wear/_overview.scss */
+/* line 406, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .center .group .instructions li .instruction p {
   font-family: "Segoe UI Semilight", "Open Sans", Arial, sans-serif, Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", "STHeiti Light", STXihei, STHeiti, "Apple LiGothic Medium", \5FAE\8EDF\6B63\9ED1\9AD4, "Microsoft JhengHei";
   font-weight: 300;
   font-size: 1.3em;
   line-height: 25px;
 }
-/* line 386, ../src/sass/page/android-wear/_overview.scss */
+/* line 414, ../src/sass/page/android-wear/_overview.scss */
 #android-wear #special-sectionOverview section.overview .center .group .instructions li .button-step.active + .instruction {
   display: block;
 }
@@ -2484,6 +2544,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 5, ../src/sass/page/android-wear/_links.scss */
 #android-wear #special-sectionOverview .page.links .group {
+  display: inline;
   float: left;
   width: 350px;
 }
@@ -2501,6 +2562,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 19, ../src/sass/page/android-wear/_links.scss */
 #android-wear #special-sectionOverview .page.links .youtube {
+  display: inline;
   float: right;
 }
 /* line 3, ../src/sass/page/android-wear/_next-section.scss */
@@ -2515,6 +2577,7 @@ html.lt-ie9 #special-sectionOverview .page {
 /* line 4, ../src/sass/page/fitness/_overview.scss */
 #fitness #special-sectionOverview .page.overview .group {
   position: relative;
+  display: inline;
   float: right;
   margin-top: 198px;
   text-align: left;
@@ -2575,6 +2638,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 9, ../src/sass/page/fitness/_activity-tracking.scss */
 #fitness #special-sectionOverview .page.activity-tracking .center .group {
+  display: inline;
   float: left;
   margin-top: 200px;
   text-align: center;
@@ -2587,6 +2651,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 28, ../src/sass/page/fitness/_activity-tracking.scss */
 #fitness #special-sectionOverview .page.activity-tracking .center figure {
+  display: inline;
   float: right;
 }
 /* line 4, ../src/sass/page/fitness/_bio-sensor.scss */
@@ -2595,6 +2660,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 8, ../src/sass/page/fitness/_bio-sensor.scss */
 #fitness #special-sectionOverview .page.bio-sensor .center .group {
+  display: inline;
   float: left;
   margin-top: 35%;
   text-align: center;
@@ -2607,6 +2673,7 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 27, ../src/sass/page/fitness/_bio-sensor.scss */
 #fitness #special-sectionOverview .page.bio-sensor .center figure {
+  display: inline;
   float: right;
 }
 /* line 7, ../src/sass/page/fitness/_wellness-apps.scss */
@@ -2645,8 +2712,8 @@ html.lt-ie9 #special-sectionOverview .page {
   margin: 0;
   padding: 0;
   border: 0;
-  border-radius: 4px / 4px;
-  border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
   border-radius: 4px / 4px;
   border: 1px #333333 solid;
   margin-bottom: 40px;
@@ -2665,20 +2732,20 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 59, ../src/sass/page/fitness/_wellness-apps.scss */
 #fitness #special-sectionOverview .page.wellness-apps .center .group.right .button.daily {
+  -moz-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
   border-top-right-radius: 0px;
-  border-top-right-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 /* line 63, ../src/sass/page/fitness/_wellness-apps.scss */
 #fitness #special-sectionOverview .page.wellness-apps .center .group.right .button.weekly {
+  -moz-border-radius-topleft: 0px;
+  -webkit-border-top-left-radius: 0px;
   border-top-left-radius: 0px;
-  border-top-left-radius: 0px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
   border-bottom-left-radius: 0px;
   margin-left: -4px;
 }
@@ -2759,6 +2826,7 @@ html.lt-ie9 #special-sectionOverview .page {
 /* line 3, ../src/sass/page/fitness/_scenario.scss */
 #fitness #special-sectionOverview .page.scenario .group {
   position: relative;
+  display: inline;
   float: right;
   width: 360px;
 }
@@ -2777,12 +2845,14 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 15, ../src/sass/page/_next-section.scss */
 #special-sectionOverview .next-section .page .center figure {
+  display: inline;
   float: left;
   width: 300px;
   height: 308px;
 }
 /* line 21, ../src/sass/page/_next-section.scss */
 #special-sectionOverview .next-section .page .center .group {
+  display: inline;
   float: right;
   margin-top: 108px;
   width: 380px;
