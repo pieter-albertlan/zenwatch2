@@ -22,7 +22,7 @@ this.Fitness = function(){
 
 
 
-    var setupEventListeners = function(){
+    var setupEventListeners = function(){        
         
         var scrollTop = wellness.offset().top;    
         var doc = $(document); 
@@ -34,21 +34,25 @@ this.Fitness = function(){
         });
 
         $(".button.daily", wellness).click( function(e) {
-            toggleButtons();
+            toggleButtons(e);
             startDailyAnimation();
         });
 
         $(".button.weekly", wellness).click( function(e) {
-            toggleButtons();
+            toggleButtons(e);
             startWeeklyAnimation();
         });
 
     }
 
-    var toggleButtons = function(){
+    var toggleButtons = function(e){
 
-        $(".button.daily").toggleClass("active");
-        $(".button.weekly").toggleClass("active");
+       
+
+        $(".button.daily").removeClass("active");
+        $(".button.weekly").removeClass("active");
+
+        $(e.target).addClass("active");
 
     }
 

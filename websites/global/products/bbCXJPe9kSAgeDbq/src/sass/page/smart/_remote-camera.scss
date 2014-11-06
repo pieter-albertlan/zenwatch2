@@ -15,7 +15,15 @@
 			width: 400px;
 			text-align: center;
 			figure{
+				position: relative;
 				margin-bottom: 1.5em;
+
+				.flare{
+					position: absolute;
+					top:-211px;
+					left:-373px;
+				}
+
 			}
 
 		}

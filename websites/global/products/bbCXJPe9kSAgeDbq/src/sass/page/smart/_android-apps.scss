@@ -6,6 +6,11 @@
 	&.android-apps{
 		background-color:#fff;
 		text-align: center;
+
+		.center{
+			width:1250px;
+		}
+
 		.menu-page{
 			width: 280px;
 			height: 35px;
@@ -25,9 +30,6 @@
 					font-size: 1.2em;
 					line-height: 35px;
 					text-decoration: none;
-					@include transition-property(all);
-  					@include transition-duration(.6s);
-  					@include transition-timing-function(ease);
 					
 					&:hover{
 						background-color: #7fb53e;
@@ -54,47 +56,50 @@
 			}
 			p{
 				margin-bottom: 2em;
-			}
-			/*
-			@include rwd(s) {
-				text-align:left;
-				margin-top: 30px;
-				width: 100%;
-			}
-
-			@include rwd(m) {
-				text-align:left;
-				margin-top: 50px;
-				width: 90%;
-			}
-			*/
-
+			}			
+			
 		}
 		figure {
-			@include float-right();
-			width: 580px;
-			img{
-				margin-top: 40 - 20px;
-			}
-			/*
-			@include rwd(s) {
-				width: 100%;
-				img{
-					margin-top: 20px;
-					margin-left: 0;
-					width: 100%;
-				}
-			}
+			position: relative;
+			@include float-right();	
+			text-align: left;
+			width:860px;
 
-			@include rwd(m) {
-				width: 100%;
-				img{
-					margin-top: 20px;
-					margin-left: 0;
-					width: 100%;
+			.app{
+				display:inline-block;
+				position: relative;
+				margin-left:5%;
+				&:first-child{
+					margin-left:10%;
+				}
+				h2{					
+					margin:-5px 0 15px 0;
+					width:100%;
+					font-size: 1.5em;
+					text-align: center;
 				}
 			}
-			*/
+		}
+
+		@media screen and (max-width: 1400px) {
+			
+			.center{
+
+				width:960px;
+
+				figure{
+
+					margin-top:-120px;
+					width:460px;					
+
+					.app{
+						margin-left:7.5%;
+						&:first-child{
+							margin-left:7.5%;
+						}
+					}
+				}
+			}			
 		}
 	}
 }

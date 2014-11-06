@@ -1845,7 +1845,11 @@ html.lt-ie9 #special-sectionOverview .page {
   background-color: #fff;
   text-align: center;
 }
-/* line 9, ../src/sass/page/smart/_android-apps.scss */
+/* line 10, ../src/sass/page/smart/_android-apps.scss */
+#smart #special-sectionOverview .page.android-apps .center {
+  width: 1250px;
+}
+/* line 14, ../src/sass/page/smart/_android-apps.scss */
 #smart #special-sectionOverview .page.android-apps .menu-page {
   width: 280px;
   height: 35px;
@@ -1859,13 +1863,13 @@ html.lt-ie9 #special-sectionOverview .page {
   border: 1px solid #7fb53e;
   overflow: hidden;
 }
-/* line 17, ../src/sass/page/smart/_android-apps.scss */
+/* line 22, ../src/sass/page/smart/_android-apps.scss */
 #smart #special-sectionOverview .page.android-apps .menu-page li {
   display: inline;
   float: left;
   text-align: center;
 }
-/* line 20, ../src/sass/page/smart/_android-apps.scss */
+/* line 25, ../src/sass/page/smart/_android-apps.scss */
 #smart #special-sectionOverview .page.android-apps .menu-page li a {
   display: block;
   width: 140px;
@@ -1874,30 +1878,18 @@ html.lt-ie9 #special-sectionOverview .page {
   font-size: 1.2em;
   line-height: 35px;
   text-decoration: none;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.6s;
-  -moz-transition-duration: 0.6s;
-  -o-transition-duration: 0.6s;
-  transition-duration: 0.6s;
-  -webkit-transition-timing-function: ease;
-  -moz-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
 }
-/* line 32, ../src/sass/page/smart/_android-apps.scss */
+/* line 34, ../src/sass/page/smart/_android-apps.scss */
 #smart #special-sectionOverview .page.android-apps .menu-page li a:hover {
   background-color: #7fb53e;
   color: #fff;
 }
-/* line 35, ../src/sass/page/smart/_android-apps.scss */
+/* line 37, ../src/sass/page/smart/_android-apps.scss */
 #smart #special-sectionOverview .page.android-apps .menu-page li a.on {
   background-color: #7fb53e;
   color: #fff;
 }
-/* line 43, ../src/sass/page/smart/_android-apps.scss */
+/* line 45, ../src/sass/page/smart/_android-apps.scss */
 #smart #special-sectionOverview .page.android-apps .group {
   display: inline;
   float: left;
@@ -1905,56 +1897,58 @@ html.lt-ie9 #special-sectionOverview .page {
   margin-top: 142px;
   width: 380px;
   text-align: left;
-  			/*
-  			@include rwd(s) {
-  				text-align:left;
-  				margin-top: 30px;
-  				width: 100%;
-  			}
-  
-  			@include rwd(m) {
-  				text-align:left;
-  				margin-top: 50px;
-  				width: 90%;
-  			}
-  			*/
 }
-/* line 51, ../src/sass/page/smart/_android-apps.scss */
+/* line 53, ../src/sass/page/smart/_android-apps.scss */
 #smart #special-sectionOverview .page.android-apps .group header .lowercase {
   text-align: left;
 }
-/* line 55, ../src/sass/page/smart/_android-apps.scss */
+/* line 57, ../src/sass/page/smart/_android-apps.scss */
 #smart #special-sectionOverview .page.android-apps .group p {
   margin-bottom: 2em;
 }
-/* line 73, ../src/sass/page/smart/_android-apps.scss */
+/* line 62, ../src/sass/page/smart/_android-apps.scss */
 #smart #special-sectionOverview .page.android-apps figure {
+  position: relative;
   display: inline;
   float: right;
-  width: 580px;
-  			/*
-  			@include rwd(s) {
-  				width: 100%;
-  				img{
-  					margin-top: 20px;
-  					margin-left: 0;
-  					width: 100%;
-  				}
-  			}
-  
-  			@include rwd(m) {
-  				width: 100%;
-  				img{
-  					margin-top: 20px;
-  					margin-left: 0;
-  					width: 100%;
-  				}
-  			}
-  			*/
+  text-align: left;
+  width: 860px;
 }
-/* line 76, ../src/sass/page/smart/_android-apps.scss */
-#smart #special-sectionOverview .page.android-apps figure img {
-  margin-top: 20px;
+/* line 68, ../src/sass/page/smart/_android-apps.scss */
+#smart #special-sectionOverview .page.android-apps figure .app {
+  display: inline-block;
+  position: relative;
+  margin-left: 5%;
+}
+/* line 72, ../src/sass/page/smart/_android-apps.scss */
+#smart #special-sectionOverview .page.android-apps figure .app:first-child {
+  margin-left: 10%;
+}
+/* line 75, ../src/sass/page/smart/_android-apps.scss */
+#smart #special-sectionOverview .page.android-apps figure .app h2 {
+  margin: -5px 0 15px 0;
+  width: 100%;
+  font-size: 1.5em;
+  text-align: center;
+}
+@media screen and (max-width: 1400px) {
+  /* line 86, ../src/sass/page/smart/_android-apps.scss */
+  #smart #special-sectionOverview .page.android-apps .center {
+    width: 960px;
+  }
+  /* line 90, ../src/sass/page/smart/_android-apps.scss */
+  #smart #special-sectionOverview .page.android-apps .center figure {
+    margin-top: -120px;
+    width: 460px;
+  }
+  /* line 95, ../src/sass/page/smart/_android-apps.scss */
+  #smart #special-sectionOverview .page.android-apps .center figure .app {
+    margin-left: 7.5%;
+  }
+  /* line 97, ../src/sass/page/smart/_android-apps.scss */
+  #smart #special-sectionOverview .page.android-apps .center figure .app:first-child {
+    margin-left: 7.5%;
+  }
 }
 /* line 5, ../src/sass/page/smart/_cover-to-mute.scss */
 #smart #special-sectionOverview .page.cover-to-mute .group {
@@ -1983,9 +1977,16 @@ html.lt-ie9 #special-sectionOverview .page {
 }
 /* line 17, ../src/sass/page/smart/_remote-camera.scss */
 #smart #special-sectionOverview .page.remote-camera .group figure {
+  position: relative;
   margin-bottom: 1.5em;
 }
-/* line 22, ../src/sass/page/smart/_remote-camera.scss */
+/* line 21, ../src/sass/page/smart/_remote-camera.scss */
+#smart #special-sectionOverview .page.remote-camera .group figure .flare {
+  position: absolute;
+  top: -211px;
+  left: -373px;
+}
+/* line 30, ../src/sass/page/smart/_remote-camera.scss */
 #smart #special-sectionOverview .page.remote-camera .hand {
   position: absolute;
   bottom: 0;
@@ -2101,7 +2102,7 @@ html.lt-ie9 #special-sectionOverview .page {
 /* line 76, ../src/sass/page/smart/_unlock.scss */
 #smart #special-sectionOverview .page.unlock .list-step {
   position: absolute;
-  bottom: 10%;
+  bottom: -3%;
 }
 /* line 79, ../src/sass/page/smart/_unlock.scss */
 #smart #special-sectionOverview .page.unlock .list-step li {

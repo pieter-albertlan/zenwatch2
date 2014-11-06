@@ -42,6 +42,7 @@ document.write('<script src="websites/global/products/'+product+'/js/vendor/ease
 document.write('<script src="websites/global/products/'+product+'/js/vendor/hammer.min.js"></script>');
 document.write('<script src="websites/global/products/'+product+'/js/jquery-ui.min.js"></script>');
 document.write('<script src="websites/global/products/'+product+'/js/image-sequencer.js"></script>');
+
 //document.write('<script src="websites/global/products/'+product+'/js/android-wear/zenwatch.js"></script>');
 //document.write('<script src="websites/global/products/'+product+'/js/android-wear/zenwatch-demo.js"></script>');
 

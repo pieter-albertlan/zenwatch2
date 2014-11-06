@@ -323,7 +323,6 @@ $(function(){
                     target = $("#overview .group");
                     target.css('margin-top', (config.height-368)/2);
 
-
                     target = $("#perfect-combination .group");
                     target.css('margin-top', (config.height-target.outerHeight())/2);
 
@@ -338,6 +337,8 @@ $(function(){
 
                     target = $("#android-apps .group");
                     target.css('margin-top', (config.height-target.outerHeight()-75)/2);
+                    target = $("#android-apps figure");
+                    target.css('padding-top', (config.height-220)/2);
 
                     target = $("#presentation-control .group");
                     target.css('margin-top', (config.height-440)/2);
