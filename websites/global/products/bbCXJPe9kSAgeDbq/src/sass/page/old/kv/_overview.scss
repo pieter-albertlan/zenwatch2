@@ -1,0 +1,64 @@
+
+.page{
+	&.overview{
+		background-color:#2b2118;
+		.group{
+			@include float-right();			
+			margin-top: 20%;
+			margin-right:-40px;
+			width:calcDist(500px,$page-width);
+
+			
+
+			h1{
+				text-align: left;
+				width:345px;
+			}
+
+			@include rwd(s) {
+				margin-right: 0;
+				margin-top: 30px;
+				width: 100%;
+				h1 img{width: 90%;}
+			}
+
+			@include rwd(m) {
+				margin-top: 50px; 
+				margin-right: 0;
+				width: 100%;
+			}
+
+			.button-video{
+				background: url("../img/index/kv/play-button-bg.png") no-repeat 0 0;
+				height:203px;
+
+			}
+
+		}
+		figure {
+			@include float-left();
+			width:calcDist(320px,$page-width);
+			img{
+				margin-top: 250px;
+				margin-left: -144px;
+			}
+
+			@include rwd(s) {
+				width: 100%;
+				img{
+					margin-top: 0;
+					margin-left: 0;
+					width: 100%;
+				}
+			}
+
+			@include rwd(m) {
+				img{
+					width: 800px;
+					margin-top: 0px;
+					margin-left: -30px;
+				}
+			}
+		}
+	}
+}

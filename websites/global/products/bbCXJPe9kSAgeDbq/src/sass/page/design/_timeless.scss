@@ -1,0 +1,28 @@
+
+.page{
+	&.timeless{
+
+		.group{
+			
+			margin-top: 280+ $asus-main-nav-h;
+			width:calcDist(760px,$page-width);
+
+			header{
+				h1{
+					text-align: center;
+					line-height:80px;
+					letter-spacing: 50px;
+				}
+			}
+
+			@include rwd(s) {
+				
+			}
+
+			@include rwd(m) {
+				
+			}
+
+		}
+	}
+}

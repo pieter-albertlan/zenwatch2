@@ -1,0 +1,35 @@
+.overview{
+	.page{
+		&.overview{
+			background-color:#2b2118;
+			.group{
+				@include float-right();			
+				margin-top: 20%;
+				margin-right:-40px;
+				padding-top:50px;
+				width:800px;
+				text-align: right;			
+
+				h1{
+					text-align: right;					
+				}				
+
+				.button-video{
+					display:inline-block;
+					background: url("../img/index/kv/play-button-bg.png") no-repeat 0 0;
+					height:203px;
+
+				}
+
+			}
+			figure {
+				@include float-left();
+				width:calcDist(320px,$page-width);
+				img{
+					margin-top: 250px;
+					margin-left: -144px;
+				}				
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.page{
+	&.up{
+
+		.center{
+
+			width:850px;
+
+			.group{				
+				
+				margin-top: 100px;
+				text-align: center;				
+				
+				figure{
+					margin-bottom:10px;
+				}
+
+				p{
+					text-align: center;		
+					margin-bottom:20px;
+				}			
+
+			}			
+
+			
+		}
+	}
+}

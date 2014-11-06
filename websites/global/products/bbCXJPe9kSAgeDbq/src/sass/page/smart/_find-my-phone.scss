@@ -1,0 +1,13 @@
+.page{
+	&.find-my-phone{
+		
+		.group{
+			@include float-left();
+			width: 450px;
+			text-align: left;
+			.lowercase{
+				text-align: left;
+			}
+		}
+	}
+}

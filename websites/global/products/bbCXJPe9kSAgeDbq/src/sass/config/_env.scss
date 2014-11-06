@@ -1,0 +1,47 @@
+$break-small: 320px;
+$break-medium:720px;
+$break-large: 960px;
+$break-xlarge: 1200px;
+$page-height:800px;
+$page-width:960px;
+$experimental-support-for-svg: true;
+//font
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+
+$header-font:"Open Sans", Arial, sans-serif, Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue","STHeiti Light",STXihei,STHeiti,"Apple LiGothic Medium",\5FAE\8EDF\6B63\9ED1\9AD4,"Microsoft JhengHei";
+$subtitle-font:"Segoe UI Light","Open Sans", Arial, sans-serif, Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue","STHeiti Light",STXihei,STHeiti,"Apple LiGothic Medium",\5FAE\8EDF\6B63\9ED1\9AD4,"Microsoft JhengHei";
+$content-font: "Segoe UI Semilight","Open Sans", Arial, sans-serif, Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue","STHeiti Light",STXihei,STHeiti,"Apple LiGothic Medium",\5FAE\8EDF\6B63\9ED1\9AD4,"Microsoft JhengHei";
+$func-font:"Segoe UI Light","Open Sans",Arial, sans-serif, Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue","STHeiti Light",STXihei,STHeiti,"Apple LiGothic Medium",\5FAE\8EDF\6B63\9ED1\9AD4,"Microsoft JhengHei";
+$quote-font:"Open Sans", Arial, sans-serif, Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue","STHeiti Light",STXihei,STHeiti,"Apple LiGothic Medium",\5FAE\8EDF\6B63\9ED1\9AD4,"Microsoft JhengHei";
+
+$asus-main-nav-h:58px;
+$asus-top-h:150px;
+
+$emBase: 12px;
+$header-font-size:50px;
+$header-line-height:65px;
+$header-medium-font-size:58px;//41px;
+$header-medium-line-height:65px;//43px;
+$header-small-font-size:28px;
+$header-small-line-height:32px;
+//
+$subtitle-font-size:32px;
+$subtitle-line-height:36px;
+$subtitle-medium-font-size:32px;//26px;
+$subtitle-medium-line-height:32px;
+$subtitle-small-font-size:20px;
+$subtitle-small-line-height:23px;
+
+$content-font-size:16px;
+$content-line-height:26px;
+$content-medium-font-size:20px;
+$content-medium-line-height:32px;
+$content-small-font-size:15px;
+$content-small-line-height:18px;
+
+$func-font-size:18px;
+
+//other
+$experimental-support-for-svg: true;

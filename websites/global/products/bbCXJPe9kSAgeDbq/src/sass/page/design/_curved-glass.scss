@@ -1,0 +1,29 @@
+.page{
+	&.curved-glass{
+	background-color:#000;
+		.group{
+			@include float-left();
+			margin-top: 245+$asus-main-nav-h;
+			width:372px;
+			header{
+				h1{
+					text-align: left;
+				}
+				p{width: 100%;}
+			}			
+		}
+		
+		.bg {
+			position: absolute;
+			top:0;
+			width:60%;
+			height:100%;
+			left:40%;
+
+			
+			img{
+				
+			}			
+		}
+	}
+}

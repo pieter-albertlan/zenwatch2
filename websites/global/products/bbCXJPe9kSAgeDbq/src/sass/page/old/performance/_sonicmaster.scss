@@ -1,0 +1,51 @@
+
+.page{
+	&.sonicmaster{
+		background-color:#f7f7f7;
+		.group{
+			@include float-right();
+			margin-top: 380 + $asus-main-nav-h;
+			width:calcDist(500px,$page-width);
+			margin-left:0px;
+			header{
+				p{width: 100%;}
+			}
+
+			@include rwd(s) {
+				margin-top: 30px;
+				width: 100%;			
+			}
+			@include rwd(m) {
+				@include float-left();
+				width: 100%;
+				margin-top: 50px;
+			}
+
+		}
+		figure {
+			@include float-left();
+			width:calcDist(460px,$page-width);
+			img{
+				margin-left: -420px;
+			}
+
+			@include rwd(s) {
+				width: 200%;
+				img{
+					margin-top: 0;
+					margin-left: 0;
+					width: 100%;
+				}
+			}
+
+			@include rwd(m) {
+				width: 200%;
+				img{
+					margin-top: 0;
+					margin-left: 0;
+					width: 100%;
+				}
+			}
+		}
+	}
+}

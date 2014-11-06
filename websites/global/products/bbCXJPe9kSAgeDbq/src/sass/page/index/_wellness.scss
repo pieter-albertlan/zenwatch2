@@ -1,0 +1,38 @@
+.wellness{
+
+	.bg{
+		background-color:#fffae9;
+	}
+	.page{
+		&.overview{
+
+			.center{
+				width:1150px;
+			}
+
+			.group{
+				@include float-left();
+				margin-top: 150+ $asus-main-nav-h;
+				width:322px;
+				text-align: center;
+
+				header{
+					p{width: 100%;}
+				}				
+
+				.button-video{
+					background: url("../img/index/welness/video-button-bg.jpg") no-repeat 0 0;				
+				}
+
+			}
+			figure {
+				@include float-left();
+				//width:calcDist(480px,$page-width);
+				height:100%;
+				img{				
+					height: 100%;
+				}				
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+#special-sectionOverview{
+	#camera {
+		.page{
+			.bg{
+				background-color: #fafafa;
+			}
+
+			.group{
+				position: absolute;
+			}
+
+			figure img{
+				position: absolute;
+			}
+
+			&.overview {
+				.name {
+					margin-bottom: 10px;
+					//@include replace-text-with-dimensions("camera/overview/logo.png",0,0);
+				}
+
+				.group{
+					width: 50%;
+					p{
+						width: 70%;
+					}
+					left:calcDist(685px,$page-width); 
+					top:calcDist(140px+$asus-main-nav-h,$page-height); 
+					width:calcDist(480px,$page-width);
+
+				}
+				figure{
+
+				
+					img{
+						&.fonepad {
+							left:calcDist(-350px,$page-width); 
+							top:calcDist(50px+$asus-main-nav-h,$page-height);
+						}
+					}
+				}
+			}
+		}
+	}
+}

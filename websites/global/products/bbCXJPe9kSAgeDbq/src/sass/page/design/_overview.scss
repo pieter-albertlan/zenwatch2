@@ -1,0 +1,44 @@
+.page{
+	&.overview{
+	background-color:#131011;
+		.group{
+			position: relative;
+			@include float-right();
+			margin-top: 140+ +$asus-main-nav-h;
+			width:calcDist(480px,$page-width);
+
+			header{
+				.logo{
+					position: absolute;
+					top:80px;
+					left:6px;
+				}
+
+				h1.bold{
+					margin-left:204px;
+					text-indent:-166px
+				}
+			}
+
+			p{
+				margin-left:100px;
+			}			
+
+		}
+
+		.bg{
+			width:60%;
+			height:100%;
+			figure {
+				@include float-left();
+				height: 100%;
+				width:50%;
+				position: relative;
+				
+				img{
+					position: absolute;
+				}				
+			}
+		}
+	}
+}

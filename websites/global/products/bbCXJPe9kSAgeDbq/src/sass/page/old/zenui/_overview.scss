@@ -1,0 +1,108 @@
+
+.page{
+	&.overview{
+		background-color: #090909;
+
+		p{
+			font-family:$quote-font;
+			font-style: italic;
+			font-size:2em;
+		}
+
+		.bg{
+
+			.sky{
+				width:100%;
+				height:80%;
+			}
+
+			.waves{
+				position: absolute;
+				bottom:0;
+				width:100%;
+				height:45%;
+			}
+
+			.sky-bottom{
+				position: absolute;
+				top:45%;
+				width:100%;
+				height:5px;
+			}
+			
+		}
+
+		.name {
+			margin-bottom: 10px;
+			//@include replace-text-with-dimensions("zen-ui/overview/logo.png",0,0);
+			margin-left:auto;
+			margin-right:auto;
+
+			@include rwd(s) {
+				margin-left:0;
+			}
+
+			@include rwd(m) {
+				margin-left:0;
+			}
+		}
+		.group{
+			position: relative;
+			width: 765px;
+			text-align: center;
+			margin-top: 40%;
+
+			@include rwd(s) {
+				text-align: left;
+				margin-top: -20px;
+				margin-bottom: 50px;
+			}
+
+			@include rwd(m) {
+				text-align: left;
+				margin-top: -20px;
+				margin-bottom: 50px;
+			}
+
+			
+		}		
+		
+		figure{
+			@include float-left();
+			display: block;
+			margin-left: 0;
+			margin-top: 40px+$asus-main-nav-h;
+			width: 96px;
+			height: 36px;
+			text-align: center;
+			img{
+				position: absolute;
+				right:20%;
+				bottom:-40px;
+
+			}
+			@include rwd(s) {
+				margin-left: 0;
+				margin-top: 20px;
+				width: 100%;
+				img{
+					margin-top: 20px;
+					margin-left: 0;
+					width: 100%;
+				}
+			}
+
+			@include rwd(m) {
+				margin-left: 0;
+				margin-top: 50px;
+				width: 100%;
+				img{
+					margin-top: 20px;
+					margin-left: 0;
+					width: 100%;
+				}
+			}
+		}
+
+	}
+}
