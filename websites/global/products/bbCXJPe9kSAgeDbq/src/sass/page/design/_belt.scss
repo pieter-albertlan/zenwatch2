@@ -1,0 +1,30 @@
+.page{
+	&.belt{
+		background-color:#161413;
+		.group{
+			@include float-left();
+			margin-top: 140+ $asus-main-nav-h;
+			width:400px;
+
+			header{
+				h1{
+					text-align: left;
+				}				
+			}	
+
+			p{
+				margin-bottom:20px;
+			}		
+		}
+
+		.bg {
+			position: absolute;
+			left:50%;
+			width:50%;
+			height:100%;
+			img{
+				
+			}			
+		}
+	}
+}

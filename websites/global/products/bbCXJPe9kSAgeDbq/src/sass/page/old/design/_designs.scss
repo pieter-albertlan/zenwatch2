@@ -1,0 +1,54 @@
+.page{
+	&.designs{
+		background-color:#2c2312;
+		.group{
+			@include float-left();
+			margin-top: 84+ $asus-main-nav-h;
+			width:calcDist(960px,$page-width);
+
+			text-align:center;
+			header{
+				p{width: 100%;}
+			}
+
+			@include rwd(s) {
+				text-align:left;
+				margin-top: 30px;
+				width: 100%;
+			}
+
+			@include rwd(m) {
+				text-align:left;
+				margin-top: 50px;
+				width: 90%;
+			}
+
+		}
+		figure {
+			@include float-right();
+			width:calcDist(960px,$page-width);
+			img{
+				margin-top: 40 - 20px;
+			}
+
+			@include rwd(s) {
+				width: 100%;
+				img{
+					margin-top: 20px;
+					margin-left: 0;
+					width: 100%;
+				}
+			}
+
+
+			@include rwd(m) {
+				width: 100%;
+				img{
+					margin-top: 20px;
+					margin-left: 0;
+					width: 100%;
+				}
+			}
+		}
+	}
+}

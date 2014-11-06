@@ -1,0 +1,10 @@
+.page{
+	&.scenario{
+		.group{
+
+			position: relative;
+			@include float-right();
+			width: 360px;
+		}		
+	}
+}

@@ -1,0 +1,23 @@
+.page{
+	&.links{
+
+		
+		.group{
+			@include float-left();
+			width: 350px;
+			h1{
+				text-align: left;
+			}
+			p{
+				margin-bottom: 100px;
+			}
+			a{
+				color: #2575ff;
+			}
+
+		}
+		.youtube{
+			@include float-right();
+		}
+	}
+}

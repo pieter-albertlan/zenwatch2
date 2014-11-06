@@ -1,0 +1,167 @@
+// #special-sectionOverview{
+// 	#performance {
+// 		.page{
+// 			.bg{
+// 				background-color: #232323;
+// 			}
+
+// 			.group{
+// 				position: absolute;
+// 			}
+
+// 			figure img{
+// 				position: absolute;
+// 			}
+			
+// 			&.speaker {
+// 				.group {
+// 					left:calcDist(80px,$page-width); 
+// 					top:calcDist(95px+$asus-main-nav-h,$page-height);
+// 					width: calcDist(800px,$page-width);
+// 					text-align: center;
+// 				}
+
+// 				figure{
+// 					img{
+// 						position:absolute;
+// 						&.fonepad {
+// 							left:calcDist(-520px,$page-width);
+// 							top:450px+$asus-main-nav-h;
+	
+// 							html.lt-ie9 &{
+// 								top:450px;
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+
+
+// 			&.overview {
+// 				.group{
+// 					left:calcDist(-65px,$page-width); 
+// 					top:calcDist(172px+$asus-main-nav-h,$page-height); 
+// 					width:calcDist(330px,$page-width);
+// 				}
+// 				figure{
+// 					img{
+// 						position:absolute;
+// 						&.fonepad {
+// 							left:calcDist(125px,$page-width); 
+// 							top:calcDist(110px+$asus-main-nav-h,$page-height);
+// 						}
+// 					}
+// 				}
+// 			}
+			
+// 			&.cpu {
+// 				.group {
+// 					left:calcDist(-65px,$page-width); 
+// 					top:calcDist(40px+$asus-main-nav-h,$page-height); 
+// 					width:calcDist(460px,$page-width);
+
+// 					.note {
+// 						margin-top:20px; 
+// 						width:calcDist(500px,460px);
+// 					}
+// 				}
+
+				
+// 				figure {
+// 					img{
+// 						position:absolute;
+// 						&.fonepad {
+// 							left:calcDist(280px,$page-width); 
+// 							top:calcDist(-380px+$asus-main-nav-h,$page-height); 
+// 						}
+// 					}
+// 				}
+// 			}
+			
+// 			&.battery {
+// 				.group {
+// 					left:calcDist(600px,$page-width); 
+// 					top:calcDist(150px,$page-height); 
+// 					width:calcDist(500px,$page-width);
+
+// 					.note {
+// 						width:calcDist(460px,500px);
+// 					}
+// 				}
+// 				figure{
+// 					img{
+// 						position:absolute;
+// 						&.fonepad {
+// 							left:calcDist(-383px,$page-width); 
+// 							top:calcDist(180px,$page-height); 
+// 						}
+// 					}
+// 				}
+// 			}
+			
+// 			&.os {
+// 				.group {
+// 					left:calcDist(-65px,$page-width); 
+// 					top:calcDist(95px+$asus-main-nav-h,$page-height);
+
+// 					header > p {
+// 						width:calcDist(500px,$page-width); 
+// 					}
+
+// 					p {
+// 						width:calcDist(420px,$page-width); 
+// 					}
+// 				}
+// 				figure{
+// 					img{
+// 						position:absolute;
+// 						&.fonepad {
+// 							left:calcDist(-100px,$page-width); 
+// 							top:calcDist(5px+$asus-main-nav-h,$page-height); 
+// 						}
+// 					}
+// 				}
+// 			}
+			
+// 			&.sd {
+// 				.group {
+// 					left:calcDist(-65px,$page-width); 
+// 					top:calcDist(90px+$asus-main-nav-h,$page-height);
+// 					width: calcDist(520px,$page-width); 
+
+// 					>p{
+// 						width: calcDist(500px,520px); 
+// 					}
+
+// 				}
+// 				figure{
+// 					img{
+// 						position:absolute;
+// 						&.fonepad {
+// 							left:calcDist(143px,$page-width); 
+// 							top:calcDist(60px+$asus-main-nav-h,$page-height);
+// 						}
+// 					}
+// 				}
+// 			}
+			
+// 			&.playto {
+// 				.group {
+// 					left:calcDist(575px,$page-width); 
+// 					top:calcDist(110px+$asus-main-nav-h,$page-height);
+// 					width: calcDist(400px,$page-width); 
+
+// 				}
+// 				figure{
+// 					img{
+// 						position:absolute;
+// 						&.fonepad {
+// 							left:calcDist(-30px,$page-width); 
+// 							top:calcDist(70px+$asus-main-nav-h,$page-height);
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }

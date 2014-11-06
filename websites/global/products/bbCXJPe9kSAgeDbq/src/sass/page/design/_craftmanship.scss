@@ -1,0 +1,30 @@
+.page{
+	&.craftmanship{
+		background-color:#161413;
+		
+		.center{
+			text-align:center;
+			.group{
+				display:inline-block;
+				margin-top: 250+ $asus-main-nav-h;
+				width:600px;
+
+				text-align:center;
+
+				
+
+				p{
+					display:inline-block;
+					width:390px;
+					font-size: 2.1em;
+					line-height: 1.25em;
+					letter-spacing: 0.001em;
+				}
+
+				header{
+					p{width: 100%;}
+				}
+			}
+		}
+	}
+}

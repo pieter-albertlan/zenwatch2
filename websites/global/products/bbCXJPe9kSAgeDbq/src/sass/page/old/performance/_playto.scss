@@ -1,0 +1,74 @@
+
+.page{
+	&.playto{
+		.bg{
+			background-color:#e8e8e8;
+		}
+		.group{
+			@include float-right();
+			margin-top: 130 + $asus-main-nav-h;
+			width:calcDist(440px,$page-width);
+			margin-left:0px;
+			header{
+				p{width: 100%;}
+			}
+
+			@include rwd(s) {
+				margin-top: 30px;
+				width: 100%;
+				p.spec>img{
+					width: 30%;
+				}
+			}
+
+
+			@include rwd(m) {
+				margin-top: 50px;
+				width: 100%;
+
+				p{
+					width: 75%;
+					@include float-left();
+				}
+				p+p{
+					width: 20%;
+					margin-top: 0;
+					margin-bottom: 0;
+					@include float-right();
+					img{
+					}
+				}
+			}
+
+		}
+		figure {
+			@include float-left();
+			margin-top: 100px;
+			width:calcDist(520px,$page-width);
+			img{
+				margin-left: -20px;
+			}
+
+			@include rwd(s) {
+				width: 100%;
+				margin-top: 0;
+				img{
+					margin:0 auto;
+					width: 90%;
+					display:block;
+				}
+			}
+
+
+			@include rwd(m) {
+				width: 100%;
+				margin-top: 0;
+				img{
+					margin:20px auto 0 auto;
+					width: 80%;
+					display:block;
+				}
+			}
+		}
+	}
+}

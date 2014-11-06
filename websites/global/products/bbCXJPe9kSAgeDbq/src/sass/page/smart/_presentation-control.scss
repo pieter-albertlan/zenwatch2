@@ -1,0 +1,13 @@
+.page{
+	&.presentation-control{
+		
+		.group{
+			@include float-left();
+			width: 450px;
+			text-align: center;
+			.circle{
+				margin-bottom: 2em;
+			}
+		}
+	}
+}

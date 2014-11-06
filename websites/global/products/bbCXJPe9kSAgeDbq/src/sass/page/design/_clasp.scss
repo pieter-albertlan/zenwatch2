@@ -1,0 +1,42 @@
+.page{
+	&.clasp{
+	//background-color:#f3eac3;
+
+		.center{
+			width:1000px;
+		}
+
+		.bg{
+			width:100%;
+			height:100%;
+
+			figure{
+				position: absolute;
+				top:0;
+				width:55%;
+				height:100%;
+			}
+		}
+		.group-find-watch{
+			.group{
+				width: 600px;
+				text-align:center;
+			}
+		}
+		.group-clasp{
+			.group{
+				@include float-right();
+				width:320px;
+				header{
+					h1{
+						text-align: left;
+						width:100%;
+					}
+					p{width: 100%;}
+				}	
+			}
+
+		}
+				
+	}
+}

@@ -1,0 +1,59 @@
+
+.page{
+	&.overview{
+		.bg{
+			
+						
+		}
+		.group{
+			@include float-right();
+			margin-top: 190+$asus-main-nav-h;
+			width:calcDist(220px,$page-width);
+			text-align: center;
+
+			p{
+				margin-bottom:80px;
+			}
+
+			header{
+				p{width: 100%;}
+			}
+			@include rwd(s) {
+				margin-top: 30px;
+				width: 100%;
+			}
+
+			@include rwd(m) {
+				@include float-left();
+				
+				margin-top: 50px;
+				width: 90%;
+			}
+
+		}
+		figure {
+			@include float-left();
+			width:calcDist(480px,$page-width);
+			img{				
+				height: 100%;
+			}
+
+			@include rwd(s) {
+				width: 100%;
+				img{
+					margin-top: 0;
+					margin-left: 0;
+					width: 100%;
+				}
+			}
+
+			@include rwd(m) {
+				img{
+					width: 800px;
+					margin-top: 20px;
+					margin-left:0px;
+				}
+			}
+		}
+	}
+}

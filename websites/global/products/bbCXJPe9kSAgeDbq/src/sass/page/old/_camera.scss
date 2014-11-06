@@ -1,0 +1,9 @@
+#special-sectionOverview{
+	#camera{
+		@import "page/camera/overview";
+		@import "page/camera/camera";
+		@import "page/camera/timerewind";
+		@import "page/camera/selfie";
+		@import "page/camera/smartremove";
+	}
+}

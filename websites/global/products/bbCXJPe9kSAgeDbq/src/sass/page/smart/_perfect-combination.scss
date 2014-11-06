@@ -1,0 +1,45 @@
+.page{
+	&.perfect-combination{
+		background-color:#fff;
+		
+		.center{
+			text-align:center;
+			.group{
+				display:inline-block;
+				margin-top: 250+ $asus-main-nav-h;
+				/* width:calcDist(460px,$page-width); */
+
+				text-align:center;
+
+				h1{
+					width: 420px;
+					
+				}
+
+				p{
+					display:inline-block;
+					width:580px;
+					font-size: 2.1em;
+					line-height: 1.25em;
+					letter-spacing: 0.001em;
+				}
+
+				header{
+					
+				}
+				
+				@include rwd(s) {
+					text-align:left;
+					margin-top: 30px;
+					width: 100%;
+				}
+
+				@include rwd(m) {
+					text-align:left;
+					margin-top: 50px;
+					width: 90%;
+				}
+			}
+		}
+	}
+}

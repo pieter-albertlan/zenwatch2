@@ -1,0 +1,46 @@
+.page{
+	&.quick-start{
+
+		
+		.group{
+			position: relative;
+			text-align: center;
+			.lowercase{				
+				width: 360px;
+				margin: 0 auto;
+			}
+			p{
+				width: 360px;
+				margin: 0 auto;
+			}
+			figure{
+				margin-bottom: 1.5em;
+			}
+			.list-link{
+				margin-top: 70px;
+				li{
+					display: inline-block;
+					margin: 0 25px;
+					.link-circle{
+						position: relative;
+						display: block;
+						width: 180px;
+						height: 180px;
+						background: url(../img/android-wear/quick-start/circle.png) 0 0 no-repeat transparent;
+						font-size: 2.2em;
+						font-weight: 100;
+						line-height: 1em;
+						span{
+							position: absolute;
+							width: 180px;
+							margin-left: -90px;
+							left: 50%;
+							bottom: 85px;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}

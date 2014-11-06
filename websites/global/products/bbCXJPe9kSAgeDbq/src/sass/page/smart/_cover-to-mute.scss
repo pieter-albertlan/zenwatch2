@@ -1,0 +1,16 @@
+.page{
+	&.cover-to-mute{
+
+		
+		.group{
+			position: relative;
+			@include float-left();
+			width: 400px;
+			text-align: center;
+			figure{
+				margin-bottom: 1.5em;
+			}
+
+		}
+	}
+}

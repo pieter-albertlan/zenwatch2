@@ -1,0 +1,393 @@
+@import "compass/reset/utilities";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3/user-interface";
+
+section.overview{
+
+	.bg{
+
+		margin-top:88px;
+		width:100%;
+		height:100%;		
+
+		.wear{
+
+			display:block;
+			position: relative;
+			float:left;
+			@include clearfix;
+			width:100%;
+			height:647px;
+
+			background: url("../img/android-wear/overview/background.jpg") no-repeat 30% 0;
+
+			header{
+
+				display:block;
+				height:86px;
+				width:100%;
+				background:#000;
+
+			}	
+
+			button{
+				border:0;
+				padding:0;
+				outline:none;
+				background:none;
+				cursor:pointer;
+			}
+
+			.zenwatch-hitarea{
+				position: absolute;
+				top:160px;
+				left:30%;
+
+				width:500px;
+				height:500px;
+
+				
+
+				&:hover{
+					cursor:url("../img/android-wear/cursor-open.png"), auto;
+				}
+
+				&:active{
+					cursor:url("../img/android-wear/cursor-close.png"), auto;
+				}
+
+				
+
+			}
+
+			.zenwatch{
+
+				position: relative;
+				margin-top:160px;
+				margin-left:30%;
+				pointer-events:none;
+
+				&.loading{
+					.slides, .background{
+						display:none;
+					}
+				}
+
+				.slides, .background{
+
+					position: absolute;
+					width:200px;
+					height:200px;
+					margin-left:-20px;
+					margin-top:10px;			
+
+					&.img{
+						overflow:hidden;
+						background:#000;
+					}
+
+					&.wireframe{
+						.slide.call{
+							.button-container{
+								left:12px;
+								width:176px;
+							}
+						}
+					}
+
+					.slide{
+						left:0;
+						width:200px;
+						height:250px;
+						font-size:1.3em;
+						text-align: center;
+						color:#fff;
+						@include user-select("none");
+						position: absolute;
+
+						span{
+							opacity:0.5;
+						}
+
+						&.call{
+
+							top:300px;
+
+							.button-container{
+
+								position: absolute;
+								top:0;
+								left:10px;
+								width:180px;
+								height:200px;
+								overflow: hidden;
+
+								.button-green, .button-red{
+									position: absolute;
+								}
+
+								.button-green{
+									top:50px;
+									right:-29px;
+								}
+
+								.button-red{
+									top:50px;
+									left:-29px;
+								}
+
+							}
+
+						}
+
+						&.weather{
+							top:0px;
+						}
+
+						&.call-later{
+							top:0;
+							left:250px;
+						}
+
+						&.clock{
+							top:0;
+							left:-250px;
+
+							.base, .minutes, .seconds, .cover{
+								position: absolute;
+							}
+
+							.cover{						
+								top:38px;
+								left:62px;
+							}
+
+							.base{
+								top:61px;
+								left:62px;
+							}
+
+							.minutes{
+								top:58px;
+								left:100px;
+							}
+
+							.seconds{
+								top:102px;
+								left:103px;
+							}
+
+						}
+
+						&.maps{
+							top:600px;
+						}
+
+						&.tasks{
+							top:900px;
+						}
+					}
+
+				}
+
+				.background{
+					background:#000;		
+				}
+
+				.watch-overlay{
+
+					display:block;
+					position: absolute;
+					top:-36px;
+					left:-62px;
+
+					width:289px;
+					height:310px;			
+
+					background: url("../img/android-wear/overview/watch-overlay.png") no-repeat 0 0;			
+
+				}
+			}
+		}
+
+		.watch-instructions-overlay{
+
+			position: relative;
+			width:100%;
+			height:100%;
+			pointer-events:none;
+
+			.background{
+				position: absolute;
+				width:100%;
+				height:100%;
+				background:#000;
+				opacity:0.75;	
+			}
+			
+
+			.instructions{
+
+				position: absolute;
+				top:160px;
+				left:30%;
+
+				.instruction{
+
+					position: absolute;
+					top:-23px;
+					left:-115px;
+					width:300px;
+					height:300px;
+					opacity:0;
+
+					&.active{
+						opacity:1;
+					}
+
+					&.step1{
+						.circle1, .circle2, .circle3, .circle4{
+							position: absolute;
+						}
+					}
+
+					&.step2{
+						.arrow1, .arrow2, .arrow3{							
+							margin-left:110px;
+						}
+
+						.arrow1{
+							margin-top:40px;
+						}						
+					}
+
+					&.step3, &.step4{
+						.arrow1, .arrow2, .arrow3{
+							display:inline-block;
+							margin-right:-10px;
+						}
+						.arrow1{
+							margin:116px -10px 0 55px;
+						}
+					}
+
+					&.step4{
+						.arrow1{
+							margin-left:60px;
+						}						
+					}
+
+					p{
+						position: absolute;
+						padding:0 50px;
+						top:250px;
+						width:200px;
+						line-height:25px;
+						text-align: center;
+						font-size:1.5em;
+
+					}
+				}
+			}
+		}		
+	}
+
+
+	.center{
+
+		position: relative;
+		margin:0 auto;
+		pointer-events:none;
+
+		.group{			
+
+			position: absolute;
+			margin-top:200px;
+			right:0;
+			width:361px;
+			color:#fff;
+
+			.android-wear{
+				margin-bottom:12px;
+			}
+
+			h1, p{
+				margin-bottom:25px
+			}
+
+			p{
+				line-height:20px;
+			}
+
+			h1{
+				text-align: left;
+			}
+
+			.instructions{
+
+				position: relative;
+
+				li{
+
+					display:inline-block;
+					margin-right:10px;
+					vertical-align: top;
+
+					.button-step{
+
+						@include reset-box-model();
+						vertical-align: top;
+						color:#2675ff;
+						font-weight:700;
+						line-height:33px;
+						text-align: center;
+						width:33px;
+						height:33px;
+						background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAABuElEQVRYw82Yv04CQRDG1wZzzcETkBATE+4BxGc4C88GeAewES1JsBYfAN5DChMttJFWCw0CiW8gtpKsc+abZHIhx513t27xCxnYmfnC/ptZtX+hVQoOiAExIRbEJ6HxucD3A4xLFFNrrZIMdIgOMUPCpLwTXfhnEnFMfIjAU+Ka8Ik9ooJxFdg+fp8Kn9A/+IuIXWIkAt0S7ZRT14IfxxghbiIRLnEPxzVxnjJ5lB7iaMR1t4koEXdweCW8jAIYD/E04pfiRPAUvBHVnAQwVcTlqdkoIhBT4OUsQP4jPDVBVIQjdkGvIAFyjfCucaSIjtgFygC8a7pSBB9EbUMiWsg3YxENcRApg/CB1giNPoyhYRFD5O2Hxg2MI8MifOSdhMYSRs2wiBryLkNjBaNsWISLvF9KXDDqH/jNbc0/YcWasGJ3WHFOWHFiWnF3WHOLWlFPyMrqm6gXJKCO+BsrK2aMAS8F1ZjPiD/eVm0/FFxtP8r+I2nfkXWNnKXtO+I6sGbK5M0sHVh0scb1onzplUUvekU8RXrRkzy68lNinrIrn8PPyeNpIO59gsuAlXifuCQOiZ2k7xM/6Reuo946L78AAAAASUVORK5CYII=);
+						pointer-events:none;
+						cursor:pointer;
+
+						&.active{
+							color:#fff;
+							background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAABG0lEQVRYw82Yyw2CQBBA8aLhYhmUIHYh1gEePZJgGdCH3OCgXSCQ2IHYAM6amUg2Kst35/BCQnZnXmB/s4Z1rI0ObIAAiIECeAA1Pgt8H2A75bgqjUzABTJMqMoN8LD/IIkdcO+YXEb0d/pIrIBwYHKZEOMqSayBdGQBIsX4fyWWQDKRAJFgnp8S4cQCzV/zVcKZSYBwZAlzhFnQZ9aYTQl3ZgHCa0pkmiQykrA1CRC2kPA1S/hC4qxZIhYSpWaJUkhUmiWehmaBN2y+BIsxwWJ2sFgnWKyYLPYONrsoi/MEi5MVEc0kELWdti8TC1zl+oNl3cGmApMH6xi16H6MqvwA5B2T59hvcFXedj9Bx4DK+txPnIAtsFCN+wImGyOUjMCeQAAAAABJRU5ErkJggg==);
+							pointer-events:auto;
+						}
+
+						&.disabled{						
+							opacity:0.5;
+						}
+
+						&.button-reset{
+							color:#fff;
+							background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAC20lEQVRYw7VYS0iVQRT+a2HdFlcXQQvBEivSRdHCDIIWLW+LrgvNZYt22sabIJJghYvQcK3t0mgXCeYiKugB5iKIFArzSkEE9lQhIgz+zsQ3cDidmX/mXlt83DuPc+bjnDmP+ZODfWkSgWOEIcIsoUxYI6T4LWN+CPuCdKZpmoRszBG6CUs4MBRvCT2Qr4rEGcJ7pniecJ1QIDQR6rCvDuMC1ueZjJEvVkJiB2GcKbpP6Ip03VnIWR3j0BtEIk94BMHfhIuRh0uUoCeF3nwWiRrCQwi8JrRUScCiBfpS6K/xkbAueENoiDhkkPCOcANu0PY0QK91jUqiyFwQa4FrIjJeEjocFrGuKUoSORYFpQrMPeYI02HHHbFRk+MkulkUVOJzkw++OIj0K/tt1PRwEjYRaWFoLtGJACK7COcIiwqR40r4mvklS6KNJSJN+SWsH4mwzC1BoqzssQmtzd5sMxhVNu4hbHoU+TAniJwS66OYHzSDexicVhS9EIrGIkjsE7KTYr2A+VkzWMGgUWzqc1y01ggij0VB42uNmF8xg3UMatmG/Z7quBpBYpjJfVPKg5nfSNgmnjO+Z5TpmUASA0zmh7L+d02zhE0mn1l2s/hK+IT/JwNIXGGyaz5LyDtRD2vsJPQKEu3IG4bw7gAS06KvcN4JX3QcECQmIu5DXljyri86fHmCWyo2Om4LuQ5fnsjKmOeFMnNpmzMIXBUy5n5t92XMrNqRiD7T4BfhAm9OgMPMvT4r/FM7QqroIcJPRflHwjPCA/QQWjjfDK2iIf3EUQcRH+7E9BO8s9r0+LzJYe5UcdeAIt/MCmLR1WNOYMNCRo9pFEyheTXpeIPwgfAch+919JivZKi7uu0n/7nbfsrfH6HvjlKVBHpj3x2+F1hn5OGd1bzApO99b1Fb9GrZW3QEd4PXjPateJWbxLQcGZ7LkMttxacB3/cJ2wass+8Tl9Fdbwv9PvEHlZRfhAvqulwAAAAASUVORK5CYII=);
+							
+							&.active{
+								background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAACvUlEQVRYw81YXWsTQRRdX5S8+DNEEBUUjAiCggV9UCOCCII/wFTxRamVhVSlxg9KUUpJfanoS/XBamv8alqpICrEClYLaVONWqnStEmNtdTKcYbZZXc2Ox/JptALh4Tde+6cnbkzc2eMNadgVIAtBDGCJEGWoEAA6zdrPY9ZfloxARg6jiGCKEHGalAXowT1Fj+QiP0EuQob94LyI9WIWEWQCNi4FwkrrpaI1QT9NRZgo9+KLxWxkiC1RAJspKx2hCKqGoLWJ8DENHDnNXDytvbQ+IqIVPt1NwbA2ch34MQtJS/iFREKMgs6B+Fr7SnlrAm5RUSDjPO5e8DMb38hV5NSbr1bhHAhWtcAHG5TC9nYCDR0AZnJciGHrgt5GVtEWJp0j1mgfS36PfPgLS/iS17qH6YiTJHDtiZg8Z9WoDIM5XghRxNCX5OKeCgKNPyND0QTUFfEzmaeez8t9E1SEeN+Ly/3+ifawWv6Qt5kHd7nKaHfOBVR9L6oi0NoU7/0RdApaltxTug3a3gfbmhkBJkNfNQT0fLI4cwtiP3KeiLew0jTJScpbSuQtSBfYv+PtKtFtD1zuLN/5D3B5cT2C6w31p8BLvbwIqI32bqx2QTCMbWI1AeHOzEjzwnh7Ki7xIvoeqWfD5tMvif7huWzw5QF+5qvbnb0DvE8yYZmKlfMs3f5YDRp91xR5EIfz6H5tfa0fMU0VEUsHU+3LSwC57tZfrj99pKl/flI+WyS9EJGexfdTb58/m958J9FIP0JeDnKagg/607r76LKeiLS6i9EZk/fV1ZPaFVWu+L+3e01Olx0oaq0srLRoZP5xzrZdp39wRK1NA9MFoB3Odb4jmZljA5VtT24xNX2C/f5Y9meO5bNCcybrLU4ix6oxan8OMFYhY2PWbzAp3LV/YRdBhRd9xNNBFsJVujeT/wHJGo4TpMS+TEAAAAASUVORK5CYII=);
+							}						
+						}
+					}
+
+
+
+					.instruction{
+						position: absolute;
+						left:0;
+						top:50px;
+						display:none;
+
+						p{
+							font-family:$content-font;
+							font-weight:300;
+							font-size:1.3em;
+							line-height:25px;
+						}
+					}
+
+					.button-step.active + .instruction{
+						display:block;
+					}
+				}
+			}		
+		}	
+	}
+}
